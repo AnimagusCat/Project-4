@@ -48,9 +48,12 @@ class AutoText extends React.Component{
     render () {
         const {text} = this.state;
         return (
-            <div className="AutoText">
-                <input value={text} onChange={this.onTextChange} type="text" />
-                {this.renderSuggestions ()}
+            <div>
+                <div className="AutoText">
+                    <input value={text} onChange={this.onTextChange} type="text" />
+                    {this.renderSuggestions ()}
+                </div>
+                <button className="Searchbtn">Search</button>
             </div>
         )
     }

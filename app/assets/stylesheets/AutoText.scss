@@ -1,16 +1,17 @@
 .AutoText {
-	margin: 0 25%;
-	width: 50%;
+	// margin: 0 25%;
+	width: 40%;
 	border: 1px solid grey;
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
-	font-size: 14px;
+	font-size: 20px;
 	font-family: sans-serif;
+	display: inline-block;
 }
 
 .AutoText input {
 	width: 100%;
 	border: none;
-	font-size: 14px;
+	font-size: 20px;
 	font-family: sans-serif;
 	padding: 10px 5px;
 	box-sizing: border-box;
@@ -37,4 +38,11 @@
 .AutoText li::hover {
 	text-decoration: underline;
 	background-color: rgba(128, 128, 128, 0.20);
+}
+
+.Searchbtn {
+	font-size: 20px;
+	margin: 0 20px;
+	padding: 8px;
+	position: absolute;
 }
