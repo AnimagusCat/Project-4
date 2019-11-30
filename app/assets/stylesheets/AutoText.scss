@@ -1,0 +1,40 @@
+.AutoText {
+	margin: 0 25%;
+	width: 50%;
+	border: 1px solid grey;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+.AutoText input {
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	font-family: sans-serif;
+	padding: 10px 5px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.AutoText ul {
+	list-style-type: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid grey;
+}
+
+.AutoText ul::before {
+	content: "";
+}
+
+.AutoText li {
+	padding: 10px 5px;
+	cursor: pointer;
+}
+
+.AutoText li::hover {
+	text-decoration: underline;
+	background-color: rgba(128, 128, 128, 0.20);
+}
