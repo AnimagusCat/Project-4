@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+
   root 'onepage#index'
-  get 'onepage/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get '/outlets/new' => 'outlets#new', as: 'new_outlet'
+  post '/outlets' => 'outlets#create'
+  devise_for :users
 end
