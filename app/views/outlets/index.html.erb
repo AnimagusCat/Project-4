@@ -1,0 +1,37 @@
+<h1>Listing all outlets in Singapore</h1>
+
+<table>
+	<tr>
+		<th>Outlet Name</th>
+		<th>Logo</th>
+		<th>Block</th>
+		<th>Road</th>
+		<th>Building</th>
+		<th>Unit</th>
+		<th>Postal Code</th>
+		<th>Dining Type</th>
+		<th>Halal Type</th>
+		<th>Menu</th>
+		<th>Website</th>
+		<th>Phone</th>
+		<th>Opening Hours</th>
+	</tr>
+
+	<% @outlets.each do |outlet| %>
+		<tr>
+			<td><%= outlet.name %></td>
+			<td><%= outlet.logo %></td>
+			<td><%= outlet.block %></td>
+			<td><%= outlet.road %></td>
+			<td><%= outlet.building %></td>
+			<td><%= outlet.unit %></td>
+			<td><%= outlet.postal_code %></td>
+			<td><%= outlet.dining_type %></td>
+			<td><%= outlet.halal_type %></td>
+			<td><%= outlet.menu %></td>
+			<td><%= outlet.website %></td>
+			<td><%= outlet.phone %></td>
+			<td><%= outlet.opening_hours %></td>
+		</tr>
+	<% end %>
+</table>

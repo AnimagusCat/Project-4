@@ -28,13 +28,24 @@
     <%= form.text_field :postal_code %>
   </p>
   <p>
-    <%= form.label :dining_type %><br>
-    <%= form.text_field :dining_type %>
-  </p>
+	<select id="halal_type" name="halal_type">
+		<option value="muslim">Muslim-owned</option>
+		<option value="certified">Halal-certified</option>
+	</select>
+	</p>
   <p>
-    <%= form.label :halal_type %><br>
-    <%= form.text_field :halal_type %>
-  </p>
+  <select id="dining_type" name="dining_type">
+	  <option value="hawker">Hawker</option>
+	  <option value="restaurant">Restaurant</option>
+	  <option value="cafe">Cafe</option>
+	  <option value="kiosk">Kiosk</option>
+	  <option value="foodcourt">Foodcourt</option>
+	  <option value="bazaar">Bazaar</option>
+	</select>
+	</p>
+
+  <%= form.collection_check_boxes :cuisine_ids, @cuisines, :id, :name %>
+
   <p>
     <%= form.label :menu %><br>
     <%= form.text_area :menu %>
