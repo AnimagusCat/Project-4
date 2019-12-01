@@ -18,3 +18,51 @@ body {
 	background-image: url("bg.jpg");
 	font-family: 'Roboto', sans-serif;
 }
+
+.logo-home {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 60px;
+	text-shadow: 1px 1px #4F5A78;
+	margin-top: 20%;
+	margin-bottom: 2%;
+	color: #4BC0D4;
+	text-align: center;
+}
+
+.results-title {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2rem;
+	margin: 3%;
+	text-align: center;
+}
+
+.results-card-header-c {
+	background-color: #FAD584;
+	display: flex;
+	justify-content: space-between;
+}
+
+.results-card-header-m {
+	background-color: #FCC1B3;
+	display: flex;
+	justify-content: space-between;
+}
+
+.outlet-name {
+	font-weight: bold;
+}
+
+.outlet-name a:hover {
+	color: #4BC0D4;
+}
+
+.address {
+	text-transform: uppercase;
+}
+
+
+
+.navbar-buttons {
+	text-align: center;
+}

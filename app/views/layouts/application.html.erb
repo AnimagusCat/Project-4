@@ -18,25 +18,27 @@
   <body>
   	<div class="pos-f-t">
 		  <div class="collapse" id="navbarToggleExternalContent">
-		    <div class="p-4" style="background-color: #FFC040;">
+		    <div class="p-4" style="background-color: #4BC0D4;">
 
-		    <% if user_signed_in? == false %>
-		    	<%= button_to 'Log In', new_user_session_url, {:class => "btn btn-outline-secondary"} %>
-		    <% end %>
+		    	<div class="navbar-buttons">
+				    <% if user_signed_in? == false %>
+				    	<%= button_to 'Log In', new_user_session_url, {:class => "btn btn-outline-light btn-lg m-2"} %>
+				    <% end %>
 
-		    <% if user_signed_in? %>
-		    	<%= button_to 'Log Out', destroy_user_session_url, {method: :delete, :class => "btn btn-outline-secondary"} %>
-		    <% end %>
+				    <% if user_signed_in? %>
+				    	<%= button_to 'Log Out', destroy_user_session_url, {method: :delete, :class => "btn btn-outline-light btn-lg m-2"} %>
+				    <% end %>
 
-		    <a class="btn btn-outline-secondary" href="/" role="button">Home</a>
+				    <a class="btn btn-outline-light btn-lg m-2" href="/" role="button">Home</a>
 
-		    <a class="btn btn-outline-secondary" href="/about" role="button">About</a>
+				    <a class="btn btn-outline-light btn-lg m-2" href="/about" role="button">About</a>
 
-		    <a class="btn btn-outline-secondary" href="/contact" role="button">Contact</a>
+				    <a class="btn btn-outline-light btn-lg m-2" href="/contact" role="button">Contact</a>
+				   </div>
 
 		    </div>
 		  </div>
-		  <nav class="navbar navbar-light" style="background-color: #FFC040;">
+		  <nav class="navbar navbar-light" style="background-color: #4BC0D4;">
 		    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>

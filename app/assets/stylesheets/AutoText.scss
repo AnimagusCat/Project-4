@@ -1,3 +1,7 @@
+.autoText-container {
+	text-align: center;
+}
+
 .AutoText {
 	// margin: 0 25%;
 	width: 50%;
@@ -6,6 +10,7 @@
 	font-size: 20px;
 	font-family: sans-serif;
 	display: inline-block;
+
 }
 
 .AutoText input {
@@ -33,7 +38,7 @@
 .AutoText li {
 	padding: 10px 5px;
 	cursor: pointer;
-	background-color: #FFFFFF;
+	background-color: #FFFFFD;
 }
 
 .AutoText li::hover {
@@ -44,8 +49,10 @@
 .Searchbtn {
 	margin: 0 20px;
 	position: absolute;
-	background-color: #FFC040;
-	color: #FAFAFA;
+	// background-color: #FFC040;
+	background-color: #4BC0D4;
+	// color: #FAFAFA;
+	color: #FFFFFD;
 }
 
 .footer {

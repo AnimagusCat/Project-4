@@ -48,16 +48,12 @@ class AutoText extends React.Component{
     render () {
         const {text} = this.state;
         return (
-            <div className="container">
+            <div className="container autoText-container">
                 <div className="AutoText">
                     <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Find a halal place near you..." />
                     {this.renderSuggestions ()}
                 </div>
                 <button className="Searchbtn btn btn-lg">Search</button>
-                <div className="footer">
-                    Are you an owner of a halal establishment?<br/>
-                    <a href="#">Register an account with us</a> for advertising opportunities.
-                </div>
             </div>
         )
     }
