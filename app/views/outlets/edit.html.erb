@@ -1,32 +1,32 @@
-<h1>Add New Outlet</h1>
+<h1>Edit Outlet</h1>
 <%= form_with scope: :outlet, url: outlets_path, local: true do |form| %>
   <p>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
+	<%= form.label :name %><br>
+	<%= form.text_field :name %>
   </p>
   <p>
-    <%= form.label :logo %><br>
-    <%= form.text_area :logo %>
+	<%= form.label :logo %><br>
+	<%= form.text_area :logo %>
   </p>
   <p>
-    <%= form.label :block %><br>
-    <%= form.text_field :block %>
+	<%= form.label :block %><br>
+	<%= form.text_field :block %>
   </p>
   <p>
-    <%= form.label :road %><br>
-    <%= form.text_field :road %>
+	<%= form.label :road %><br>
+	<%= form.text_field :road %>
   </p>
   <p>
-    <%= form.label :building %><br>
-    <%= form.text_field :building %>
+	<%= form.label :building %><br>
+	<%= form.text_field :building %>
   </p>
   <p>
-    <%= form.label :unit %><br>
-    <%= form.text_field :unit %>
+	<%= form.label :unit %><br>
+	<%= form.text_field :unit %>
   </p>
   <p>
-    <%= form.label :postal_code %><br>
-    <%= form.text_field :postal_code %>
+	<%= form.label :postal_code %><br>
+	<%= form.text_field :postal_code %>
   </p>
   <p>
 	<select id="halal_type" name="halal_type">
@@ -48,23 +48,23 @@
   <%= form.collection_check_boxes :cuisine_ids, @cuisines, :id, :name %>
 
   <p>
-    <%= form.label :menu %><br>
-    <%= form.text_area :menu %>
+	<%= form.label :menu %><br>
+	<%= form.text_area :menu %>
   </p>
   <p>
-    <%= form.label :website %><br>
-    <%= form.text_field :website %>
+	<%= form.label :website %><br>
+	<%= form.text_field :website %>
   </p>
   <p>
-    <%= form.label :phone %><br>
-    <%= form.text_field :phone %>
+	<%= form.label :phone %><br>
+	<%= form.text_field :phone %>
   </p>
   <p>
-    <%= form.label :opening_hours %><br>
-    <%= form.text_area :opening_hours %>
+	<%= form.label :opening_hours %><br>
+	<%= form.text_area :opening_hours %>
   </p>
 
   <p>
-    <%= form.submit %>
+	<%= form.submit %>
   </p>
 <% end %>

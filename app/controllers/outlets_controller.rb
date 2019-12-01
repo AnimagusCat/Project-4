@@ -14,11 +14,14 @@ class OutletsController < ApplicationController
   end
 
   def edit
+    @outlet = Outlet.find(params[:id])
+    @cuisines = Cuisine.all
   end
 
   def create
     @outlet = Outlet.new(outlet_params)
     @outlet.user_id = current_user
+    @cuisines = Cuisine.all
 
     if (@outlet.save)
       redirect_to @outlet
@@ -28,6 +31,11 @@ class OutletsController < ApplicationController
   end
 
   def update
+    @outlet = Outlet.find(params[:id])
+    @cuisines = Cuisine.all
+
+    @outlet.update(outlet_params)
+    redirect_to @outlet
   end
 
   def destroy
