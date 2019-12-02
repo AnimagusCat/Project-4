@@ -1,54 +1,63 @@
-<p>
-    <strong>Outlet Name</strong>
-    <%= @outlet.name %>
-  </p>
-  <p>
-    <strong>Logo</strong>
-    <%= @outlet.logo %>
-  </p>
-  <p>
-    <strong>Block</strong>
-    <%= @outlet.block %>
-  </p>
-  <p>
-    <strong>Road</strong>
-    <%= @outlet.road %>
-  </p>
-  <p>
-    <strong>Building</strong>
-    <%= @outlet.building %>
-  </p>
-  <p>
-    <strong>Unit</strong>
-    <%= @outlet.unit %>
-  </p>
-  <p>
-    <strong>Postal Code</strong>
-    <%= @outlet.postal_code %>
-  </p>
-  <p>
-    <strong>Dining Type</strong>
-    <%= @outlet.dining_type %>
-  </p>
-  <p>
-    <strong>Halal Type</strong>
-    <%= @outlet.halal_type %>
-  </p>
-  <p>
-    <strong>Menu</strong>
-    <%= @outlet.menu %>
-  </p>
-  <p>
-    <strong>Website</strong>
-    <%= @outlet.website %>
-  </p>
-  <p>
-    <strong>Phone</strong>
-    <%= @outlet.phone %>
-  </p>
-  <p>
-    <strong>Opening Hours</strong>
-    <%= @outlet.opening_hours %>
-  </p>
+<div class="container">
 
-  <%= link_to 'Edit', edit_outlet_path(@outlet) %>
+	<table class="table outlets-show">
+	  <thead class="outlets-show-head">
+	    <tr>
+	      <th scope="col" colspan="2" style="text-align: center; font-size:30px;"><%= @outlet.name %></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">Logo</th>
+	      <td><%= @outlet.logo %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Block</th>
+	      <td><%= @outlet.block %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Road</th>
+	      <td><%= @outlet.road %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Building</th>
+	      <td><%= @outlet.building %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Unit</th>
+	      <td><%= @outlet.unit %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Postal Code</th>
+	      <td><%= @outlet.postal_code %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Halal Type</th>
+	      <td><%= @outlet.halal_type %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Dining Type</th>
+	      <td><%= @outlet.dining_type %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Menu</th>
+	      <td><%= @outlet.menu %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Website</th>
+	      <td><%= @outlet.website %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Phone</th>
+	      <td><%= @outlet.phone %></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">Opening Hours</th>
+	      <td><%= @outlet.opening_hours %></td>
+	    </tr>
+	  </tbody>
+	</table>
+
+
+  <%= link_to 'Edit', edit_outlet_path(@outlet), {:class => "btn btn-info", :style => "margin: 0 45%;"} %>
+</div>

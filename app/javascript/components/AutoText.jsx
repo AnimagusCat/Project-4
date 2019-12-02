@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../assets/stylesheets/AutoText.scss'
+import axios from 'axios';
 
 class AutoText extends React.Component{
     constructor () {
@@ -14,7 +15,12 @@ class AutoText extends React.Component{
         this.state = {
             suggestions: [],
             text: "",
+            outlets: []
         }
+    }
+
+    componentDidMount(){
+
     }
 
     onTextChange = (e) => {
@@ -33,6 +39,7 @@ class AutoText extends React.Component{
             suggestions: [],
         }))
     }
+
     renderSuggestions () {
         const {suggestions} = this.state;
         if (suggestions.length === 0){
@@ -45,15 +52,43 @@ class AutoText extends React.Component{
         );
     }
 
+    searchResults () {
+        const url = '/outlets/search/'+this.state.text;
+
+
+
+        axios.get(url)
+            .then((response) => {
+
+              console.log("this is the response", response)
+              const data = response.data
+
+              this.setState({ outlets: data })
+
+            }).catch((error)=>{
+              console.log(error);
+            })
+    }
+
+
     render () {
         const {text} = this.state;
+
+
+
+        const url = "/outlets/search/"+this.state.text
+
         return (
             <div className="container autoText-container">
                 <div className="AutoText">
                     <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Find a halal place near you..." />
                     {this.renderSuggestions ()}
                 </div>
-                <button className="Searchbtn btn btn-lg">Search</button>
+                <a className="Searchbtn btn btn-lg" href={url}>Search</a>
+
+
+
+
             </div>
         )
     }

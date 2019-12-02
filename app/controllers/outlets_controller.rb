@@ -1,8 +1,16 @@
 class OutletsController < ApplicationController
-  before_action :authenticate_user!, :except => [:index]
+  before_action :authenticate_user!, :except => [:index, :show, :search]
 
   def index
     @outlets = Outlet.all
+
+    respond_to do |format|
+      format.json {
+          render :json => @outlets
+      }
+
+      format.html
+    end
   end
 
   def show
@@ -20,14 +28,24 @@ class OutletsController < ApplicationController
 
   def create
     @outlet = Outlet.new(outlet_params)
-    @outlet.user_id = current_user
+    # @outlet.halal_type = params[:halal_type]
+    # @outlet.dining_type = params[:dining_type]
+    @outlet.user = current_user
     @cuisines = Cuisine.all
 
-    if (@outlet.save)
-      redirect_to @outlet
-    else
-      render 'new'
-    end
+    p '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
+    puts current_user
+    p params
+    p '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
+
+    @outlet.save
+    redirect_to @outlet
+
+    # if (@outlet.save)
+    #   redirect_to @outlet
+    # else
+    #   render 'new'
+    # end
   end
 
   def update
@@ -39,6 +57,15 @@ class OutletsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def search
+    p "//////////////////////"
+    # name = request.params[:road]
+
+    @outlets = Outlet.where(road: params[:keyword])
+    p @outlets
+    render "index"
   end
 
   private

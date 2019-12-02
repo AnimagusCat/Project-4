@@ -30,6 +30,10 @@ body {
 	text-align: center;
 }
 
+.results-card {
+	margin: 2%;
+}
+
 .results-title {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 2rem;
@@ -53,16 +57,30 @@ body {
 	font-weight: bold;
 }
 
-.outlet-name a:hover {
+/*.outlet-name a:hover {
 	color: #4BC0D4;
-}
+}*/
 
 .address {
 	text-transform: uppercase;
 }
 
+.new-outlet-title {
+	text-align: center;
+	margin-top: 2%;
+}
 
+.outlets-show {
+	background-color: #FAFAFA;
+	margin-top: 2%;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+}
 
 .navbar-buttons {
 	text-align: center;
 }
+
+/*.halal-type option, .dining_type option {
+	width: 5%;
+	margin: 5%;
+}*/
