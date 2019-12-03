@@ -24,6 +24,10 @@ class OutletsController < ApplicationController
   def edit
     @outlet = Outlet.find(params[:id])
     @cuisines = Cuisine.all
+
+    unless (@outlet.user_id === current_user.id)
+        redirect_to outlets_path
+      end
   end
 
   def create
