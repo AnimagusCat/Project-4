@@ -1,0 +1,13 @@
+<div class="container">
+
+	<div class="text-bg">
+
+		<h1 class="edit-user-profile">Profile</h1>
+		<br/>
+
+		<%= @user.name %>
+		<%= @user.avatar %>
+
+		<%= link_to 'Edit', user_edit_path(@user), {:class => "btn btn-info", :style => "margin: 0 45%;"} %>
+	</div>
+</div>

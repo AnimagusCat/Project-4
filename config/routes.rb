@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   patch '/outlets/:id' => 'outlets#update'
   post '/outlets' => 'outlets#create'
 
-
   get '/about' => 'onepage#about', as: 'about'
   get '/contact' => 'onepage#contact', as: 'contact'
+
   devise_for :users
+  get '/users/:id' => 'users#show', as: 'user'
+  get '/users/:id/edit' => 'users#edit', as: 'user_edit'
 end
