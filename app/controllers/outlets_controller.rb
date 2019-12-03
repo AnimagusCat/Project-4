@@ -38,8 +38,48 @@ class OutletsController < ApplicationController
     p params
     p '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
 
+    ##CLOUDINARY PORTION####
+    uploaded_logo = outlet_params[:logo].path
+    cloudinary_file_logo = Cloudinary::Uploader.upload(uploaded_logo)
+
+    @outlet.update(outlet_params)
+    @outlet.logo = cloudinary_file_logo["url"]
+
+    ######MENU UPLOAD#####
+    uploaded_menu = outlet_params[:menu].path
+    cloudinary_file_menu = Cloudinary::Uploader.upload(uploaded_menu)
+
+    @outlet.update(outlet_params)
+    @outlet.menu = cloudinary_file_menu["url"]
+
+    p uploaded_logo
+    p uploaded_menu
+
+    ###########################
+
     @outlet.save
     redirect_to @outlet
+
+    # uploaded_file = outlet_params[:logo].path
+    #   auth = Rails.application.credentials.cloudinary
+    #   p auth
+    #   p "//////////////////////////"
+    #   if ENV.key? ("CLOUDINARY_URL")
+    #     cloudinary_file = Cloudinary::Uploader.upload(uploaded_file)
+    #   else
+    #     cloudinary_file = Cloudinary::Uploader.upload(uploaded_file, auth)
+    #   end
+    #   #store this public_id value to the database
+    #   #cloudnary_file[‘public_id’]
+    #   # render json: cloudnary_file
+    #   # p cloudnary_file
+    #   # s1 = cloudnary_file['public_id']
+    #   @outlet.logo = cloudinary_file["url"]
+      # @employers_profile.cloud_key = s1
+      # @explorers_profile.photo_url = s2
+
+
+
 
     # if (@outlet.save)
     #   redirect_to @outlet
@@ -52,7 +92,17 @@ class OutletsController < ApplicationController
     @outlet = Outlet.find(params[:id])
     @cuisines = Cuisine.all
 
+    ##CLOUDINARY PORTION####
+    uploaded_file = outlet_params[:logo].path
+    cloudinary_file = Cloudinary::Uploader.upload(uploaded_file)
+
     @outlet.update(outlet_params)
+    @outlet.logo = cloudinary_file["url"]
+
+    p outlet_params
+    ###########################
+
+    @outlet.save
     redirect_to @outlet
   end
 
