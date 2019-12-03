@@ -15,19 +15,19 @@
  */
 body {
 	background-color: #FAFAFA;
-	background-image: url("bg.jpg");
+	background-image: asset-url('bg.jpg');
 	font-family: 'Roboto', sans-serif;
 }
 
 .logo-home {
-	font-family: 'Libre Baskerville', serif;
-	font-weight: bold;
-	font-size: 60px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 70px;
 	text-shadow: 1px 1px #4F5A78;
 	margin-top: 20%;
 	margin-bottom: 2%;
 	color: #4BC0D4;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .results-card {
@@ -35,7 +35,7 @@ body {
 }
 
 .results-title {
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 2rem;
 	margin: 3%;
 	text-align: center;
@@ -65,7 +65,7 @@ body {
 	text-transform: uppercase;
 }
 
-.new-outlet-title {
+.new-outlet-title, .edit-outlet-title {
 	text-align: center;
 	margin-top: 2%;
 }
@@ -80,7 +80,12 @@ body {
 	text-align: center;
 }
 
-/*.halal-type option, .dining_type option {
-	width: 5%;
-	margin: 5%;
-}*/
+.autoText-container {
+	height: 100vh;
+}
+
+.text-bg {
+	background-color: #FAFAFA;
+	padding: 5%;
+	border: 1px solid #DADADA;
+}

@@ -80,11 +80,22 @@ class AutoText extends React.Component{
 
         return (
             <div className="container autoText-container">
-                <div className="AutoText">
-                    <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Find a halal place near you..." />
-                    {this.renderSuggestions ()}
+                <div className="row">
+                    <div className="col-6">
+                        <h1 className="logo-home">JOMMAKAN</h1>
+                        <div className="AutoText">
+                            <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Find a halal place near you..." />
+                            {this.renderSuggestions ()}
+                        </div>
+                        <a className="Searchbtn btn btn-lg" href={url}>Search</a>
+                    </div>
+                    <div className="col-6">
+                        <img src="../images/home-pic.png"/>
+                    </div>
+
+
                 </div>
-                <a className="Searchbtn btn btn-lg" href={url}>Search</a>
+
 
 
 

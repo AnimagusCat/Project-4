@@ -1,70 +1,74 @@
-<h1>Edit Outlet</h1>
-<%= form_with scope: :outlet, url: outlets_path, local: true do |form| %>
-  <p>
-	<%= form.label :name %><br>
-	<%= form.text_field :name %>
-  </p>
-  <p>
-	<%= form.label :logo %><br>
-	<%= form.text_area :logo %>
-  </p>
-  <p>
-	<%= form.label :block %><br>
-	<%= form.text_field :block %>
-  </p>
-  <p>
-	<%= form.label :road %><br>
-	<%= form.text_field :road %>
-  </p>
-  <p>
-	<%= form.label :building %><br>
-	<%= form.text_field :building %>
-  </p>
-  <p>
-	<%= form.label :unit %><br>
-	<%= form.text_field :unit %>
-  </p>
-  <p>
-	<%= form.label :postal_code %><br>
-	<%= form.text_field :postal_code %>
-  </p>
-  <p>
-	<select id="halal_type" name="halal_type">
-		<option value="muslim">Muslim-owned</option>
-		<option value="certified">Halal-certified</option>
-	</select>
-	</p>
-  <p>
-  <select id="dining_type" name="dining_type">
-	  <option value="hawker">Hawker</option>
-	  <option value="restaurant">Restaurant</option>
-	  <option value="cafe">Cafe</option>
-	  <option value="kiosk">Kiosk</option>
-	  <option value="foodcourt">Foodcourt</option>
-	  <option value="bazaar">Bazaar</option>
-	</select>
-	</p>
+<div class="container">
+	<h1 class="edit-outlet-title">Edit Outlet</h1>
 
-  <%= form.collection_check_boxes :cuisine_ids, @cuisines, :id, :name %>
+<%= form_with scope: :outlet, model: @outlet, local: true do |form| %>
 
   <p>
-	<%= form.label :menu %><br>
-	<%= form.text_area :menu %>
-  </p>
-  <p>
-	<%= form.label :website %><br>
-	<%= form.text_field :website %>
-  </p>
-  <p>
-	<%= form.label :phone %><br>
-	<%= form.text_field :phone %>
-  </p>
-  <p>
-	<%= form.label :opening_hours %><br>
-	<%= form.text_area :opening_hours %>
-  </p>
+	   <%= form.label :name %><br>
+	   <%= form.text_field :name, {:class=> "form-control", :minlength => 3, :maxlength => 50, :required => "true"} %>
+	 </p>
+	 <p>
+	   <%= form.label :logo %><br>
+	   <%= form.text_area :logo, {:class=> "form-control"} %>
+	 </p>
+	 <p>
+	   <%= form.label :block %><br>
+	   <%= form.text_field :block, {:class=> "form-control"} %>
+	 </p>
+	  <p>
+	    <%= form.label :road %><br>
+	  	<%= form.text_field :road, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+	  	<%= form.label :building %><br>
+	  	<%= form.text_field :building, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+	    <%= form.label :unit %><br>
+	    <%= form.text_field :unit, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+	    <%= form.label :postal_code %><br>
+	    <%= form.text_field :postal_code, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+		<select id="halal_type" name="outlet[halal_type]">
+			<option value="Muslim Owned">Muslim-owned</option>
+			<option value="Halal Certified">Halal-certified</option>
+		</select>
+		</p>
+	  <p>
+	  <select id="dining_type" name="outlet[dining_type]">
+		  <option value="Hawker">Hawker</option>
+		  <option value="Restaurant">Restaurant</option>
+		  <option value="Cafe">Cafe</option>
+		  <option value="Kiosk">Kiosk</option>
+		  <option value="Foodcourt">Foodcourt</option>
+		  <option value="Bazaar">Bazaar</option>
+		</select>
+		</p>
+
+	  <%= form.collection_check_boxes :cuisine_ids, @cuisines, :id, :name %>
+
+	  <p>
+	    <%= form.label :menu %><br>
+	    <%= form.text_area :menu, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+	    <%= form.label :website %><br>
+	    <%= form.text_field :website, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+	    <%= form.label :phone %><br>
+	    <%= form.text_field :phone, {:class=> "form-control"} %>
+	  </p>
+	  <p>
+	    <%= form.label :opening_hours %><br>
+	    <%= form.text_area :opening_hours, {:class=> "form-control"} %>
+	  </p>
 
   <p>
-	<%= form.submit %>
+		<%= form.submit "Save" %>
   </p>
+
 <% end %>
