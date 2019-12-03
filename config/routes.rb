@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   devise_for :users
   get '/users/:id' => 'users#show', as: 'user'
   get '/users/:id/edit' => 'users#edit', as: 'user_edit'
+  patch '/users/:id' => 'users#update'
 end

@@ -9,7 +9,7 @@
 	  <tbody>
 	    <tr>
 	      <th scope="row">Logo</th>
-	      <td><img src= <%= @outlet.logo %> /></td>
+	      <td><img src= <%= @outlet.user.avatar %> /></td>
 	    </tr>
 	    <tr>
 	      <th scope="row">Block</th>
@@ -58,6 +58,7 @@
 	  </tbody>
 	</table>
 
-
-  <%= link_to 'Edit', edit_outlet_path(@outlet), {:class => "btn btn-info", :style => "margin: 0 45%;"} %>
+	<% if @outlet.user_id === current_user.id %>
+  	<%= link_to 'Edit', edit_outlet_path(@outlet), {:class => "btn btn-info", :style => "margin: 0 45%;"} %>
+  <% end %>
 </div>
