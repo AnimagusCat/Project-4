@@ -5,13 +5,7 @@ import axios from 'axios';
 class AutoText extends React.Component{
     constructor () {
         super();
-        this.items = [
-            'Jurong',
-            'Changi',
-            'Choa Chu Kang',
-            'Ang Mo Kio',
-            'Tanjong Pagar',
-        ];
+
         this.state = {
             suggestions: [],
             text: "",
@@ -20,11 +14,13 @@ class AutoText extends React.Component{
     }
 
     onTextChange = (e) => {
+        const {items} = this.props;
         const value = e.target.value;
         let suggestions = [];
         if (value.length > 0 ){
             const regex = new RegExp(`^${value}`, 'i');
-            suggestions = this.items.sort().filter(v => regex.test(v));
+            suggestions = (items.sort().filter(v => regex.test(v))).slice(0,7);
+            console.log ("this is the suggestions inside event", suggestions)
         }
         this.setState(() => ({ suggestions, text: value }) );
     }

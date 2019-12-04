@@ -6,17 +6,17 @@ class UsersController < ApplicationController
     @outlet = @user.outlet
     # @user = user.find_by(id: params[:id])
 
-    # if (@user === nil)
-    #   redirect_to root_path
-    # else
+    if (@user === nil)
+      redirect_to root_path
+    else
 
-    #   @outlet = @user.outlet
+      @outlet = @user.outlet
 
-    #   unless (@user.id === current_user.id)
-    #     redirect_to root_path
-    #   end
+      unless (@user.id === current_user.id)
+        redirect_to root_path
+      end
 
-    # end
+    end
 
   end
 

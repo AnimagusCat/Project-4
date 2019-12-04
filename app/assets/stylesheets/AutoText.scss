@@ -49,10 +49,13 @@
 .Searchbtn {
 	margin: 0 20px;
 	position: absolute;
-	// background-color: #FFC040;
 	background-color: #4BC0D4;
-	// color: #FAFAFA;
 	color: #FFFFFD;
+}
+
+.Searchbtn:hover {
+	color: #FFFFFD;
+	box-shadow: 0 5px 15px rgba(75, 192, 212, 1);
 }
 
 .btn-form {
@@ -67,10 +70,9 @@
 }
 
 .homepage-pic h1 {
-	padding: 2% 25% 0 25%;
+	padding: 2% 21% 0 21%;
 	color: #B55C3C;
-	font-size: 1.5em;
-
+	font-size: 1.6em;
 }
 
 .search-area, .homepage-pic {
