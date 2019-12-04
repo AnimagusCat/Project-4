@@ -101,8 +101,21 @@ body {
 .btn-submit {
 	background-color: #4BC0D4;
 	color: #FFFFFD;
-	margin: 0 45%;
-	font-size: 1.3em;
+	font-size: 1.2em;
+	margin-left: 5%;
+	padding: 1% 2%;
+}
+
+.edit-page-buttons {
+	text-align: center;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.btn-submit:hover {
+	border: 1px solid #4BC0D4;
+	color: #4BC0D4;
+	background-color: transparent;
 }
 
 .btn-outline-back {
