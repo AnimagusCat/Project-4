@@ -2,12 +2,15 @@
 
 	<div class="text-bg">
 
-		<h1 class="edit-user-profile">Profile</h1>
+		<div class="profile-info">
+			<h1><%= @user.name %></h1>
+			<div class="profile-avatar">
+				<img src= <%= @user.avatar %> />
+			</div>
+		</div>
+
 		<br/>
-
-		<p><%= @user.name %></p>
-		<p><img src= <%= @user.avatar %> /></p>
-
-		<%= link_to 'Edit', user_edit_path(@user), {:class => "btn btn-info", :style => "margin: 0 45%;"} %>
+		<br />
+		<%= link_to 'Edit Your Profile', user_edit_path(@user), {:class => "btn btn-info", :style => "margin: 0 45%; width: 200px;"} %>
 	</div>
 </div>

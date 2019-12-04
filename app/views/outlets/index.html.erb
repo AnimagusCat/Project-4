@@ -22,11 +22,11 @@
 
 			  <div class="card-body">
 			  	<div class="row">
-				  	<div class="col-5 logo">
+				  	<div class="col-5 outlet-logo">
 				  		<img src= <%= outlet.user.avatar %> />
 				  	</div>
 				  	<div class="col-7 outlet-info">
-					    <h5 class="card-title outlet-name"><a href="/outlets/<%= outlet.id %>" style="color: #000000"><%= outlet.name %></a></h5>
+					    <h5 class="card-title outlet-name"><a href="/outlets/<%= outlet.id %>"><%= outlet.name %></a></h5>
 					    <p class="card-text address"><%= outlet.block %> <%= outlet.road %> <%= outlet.unit %> <%= outlet.building %></p>
 					    <p class="card-text address">Singapore <%= outlet.postal_code %></p>
 					  </div>

@@ -54,9 +54,14 @@ body {
 }
 
 .outlet-name {
+
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
+.outlet-name a{
+	color: #000000;
+}
 /*.outlet-name a:hover {
 	color: #4BC0D4;
 }*/
@@ -65,7 +70,16 @@ body {
 	text-transform: uppercase;
 }
 
-.new-outlet-title, .edit-outlet-title {
+.checkboxes form {
+	padding: 5px;
+}
+
+.outlet-logo img {
+	width: 50%;
+	height: auto;
+}
+
+.new-outlet-title, .edit-outlet-title, .edit-user-profile {
 	text-align: center;
 	margin-top: 2%;
 }
@@ -80,6 +94,13 @@ body {
 	text-align: center;
 }
 
+.btn-submit {
+	background-color: #4BC0D4;
+	color: #FFFFFD;
+	margin: 0 45%;
+	font-size: 1.3em;
+}
+
 .autoText-container {
 	height: 100vh;
 }
@@ -89,3 +110,22 @@ body {
 	padding: 5%;
 	border: 1px solid #DADADA;
 }
+
+.profile-info, .profile-avatar {
+	text-align: center;
+}
+
+.profile-avatar img {
+	width: 150px;
+	height: auto;
+}
+
+////////////////////////////////////////////////////////////
+////////////////*MOBILE RESPONSIVE*////////////////////////
+ @media only screen and (max-width: 700px) {
+
+ 	.profile-avatar img {
+ 		width: 100%
+ 	}
+
+ }
