@@ -79,18 +79,19 @@ class AutoText extends React.Component{
         const url = "/outlets/search/"+this.state.text
 
         return (
-            <div className="container autoText-container">
+            <div className="autoText-container">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 search-area">
                         <h1 className="logo-home">JOMMAKAN</h1>
                         <div className="AutoText">
-                            <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Find a halal place near you..." />
+                            <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Enter a street name..." />
                             {this.renderSuggestions ()}
                         </div>
                         <a className="Searchbtn btn btn-lg" href={url}>Search</a>
                     </div>
-                    <div className="col-6">
-                        <img src="../images/home-pic.png"/>
+                    <div className="col-6 homepage-pic">
+                        <img src={ require('../../assets/images/home-pic.png') } />
+                        <h1>Find halal eateries near you</h1>
                     </div>
 
 

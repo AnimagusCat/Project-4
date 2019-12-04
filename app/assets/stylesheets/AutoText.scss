@@ -62,9 +62,22 @@
 	font-size: 1.3em;
 }
 
+.homepage-pic img {
+	width: 70%;
+}
 
+.homepage-pic h1 {
+	padding: 2% 25% 0 25%;
+	color: #B55C3C;
+	font-size: 1.5em;
 
-// .footer {
-// 	padding-top: 15px;
-// 	margin-top: 40vh ;
-// }
+}
+
+.search-area, .homepage-pic {
+	 margin-top: 10vh;
+	 padding: 0;
+}
+
+.search-area {
+	padding-left: 5%;
+}

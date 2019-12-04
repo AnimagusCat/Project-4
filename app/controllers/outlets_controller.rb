@@ -96,6 +96,6 @@ class OutletsController < ApplicationController
 
   private
     def outlet_params
-      params.require(:outlet).permit( :block, :road, :building, :unit, :postal_code, :halal_type, :dining_type, :menu, :website, :phone, :opening_hours, :cuisine_ids => [])
+      params.require(:outlet).permit(:name, :block, :road, :building, :unit, :postal_code, :halal_type, :dining_type, :menu, :website, :phone, :opening_hours, :cuisine_ids => [])
     end
 end
