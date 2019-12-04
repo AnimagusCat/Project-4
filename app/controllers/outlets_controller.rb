@@ -1,5 +1,5 @@
 class OutletsController < ApplicationController
-  before_action :authenticate_user!, :except => [:index, :show, :search]
+  before_action :authenticate_user!, :except => [:index, :show, :search, :result]
 
   def index
     @outlets = Outlet.all
@@ -91,7 +91,11 @@ class OutletsController < ApplicationController
 
     @outlets = Outlet.where(road: params[:keyword])
     p @outlets
-    render "index"
+    render "result"
+  end
+
+  def result
+     @outlets = Outlet.all
   end
 
   private

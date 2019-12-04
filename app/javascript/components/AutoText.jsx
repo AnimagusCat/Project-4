@@ -19,10 +19,6 @@ class AutoText extends React.Component{
         }
     }
 
-    componentDidMount(){
-
-    }
-
     onTextChange = (e) => {
         const value = e.target.value;
         let suggestions = [];
@@ -84,7 +80,7 @@ class AutoText extends React.Component{
                     <div className="col-6 search-area">
                         <h1 className="logo-home">JOMMAKAN</h1>
                         <div className="AutoText">
-                            <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Enter a street name..." />
+                            <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Enter a road name..." />
                             {this.renderSuggestions ()}
                         </div>
                         <a className="Searchbtn btn btn-lg" href={url}>Search</a>

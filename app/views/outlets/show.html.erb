@@ -74,9 +74,10 @@
 	<div class="show-buttons">
 		<%= link_to 'Back', outlets_path, {:class => "btn btn-outline-back"} %>
 
-		<% if @outlet.user_id === current_user.id %>
+		<% if user_signed_in? == true && @outlet.user_id == current_user.id %>
 	  	<%= link_to 'Edit', edit_outlet_path(@outlet), {:class => "btn btn-edit"} %>
 	  <% end %>
+
 	</div>
 
 </div>
