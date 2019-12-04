@@ -18,12 +18,12 @@ class OutletsController < ApplicationController
   end
 
   def new
-    @cuisines = Cuisine.all
+    # @cuisines = Cuisine.all
   end
 
   def edit
     @outlet = Outlet.find(params[:id])
-    @cuisines = Cuisine.all
+    # @cuisines = Cuisine.all
 
     unless (@outlet.user_id === current_user.id)
         redirect_to outlets_path
@@ -32,10 +32,9 @@ class OutletsController < ApplicationController
 
   def create
     @outlet = Outlet.new(outlet_params)
-    # @outlet.halal_type = params[:halal_type]
-    # @outlet.dining_type = params[:dining_type]
+
     @outlet.user = current_user
-    @cuisines = Cuisine.all
+    # @cuisines = Cuisine.all
 
     p '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
     puts current_user
@@ -67,7 +66,7 @@ class OutletsController < ApplicationController
 
   def update
     @outlet = Outlet.find(params[:id])
-    @cuisines = Cuisine.all
+    # @cuisines = Cuisine.all
 
    ######MENU UPLOAD#####
     uploaded_menu = outlet_params[:menu].path
@@ -87,7 +86,6 @@ class OutletsController < ApplicationController
 
   def search
     p "//////////////////////"
-    # name = request.params[:road]
 
     @outlets = Outlet.where(road: params[:keyword])
     p @outlets
@@ -100,6 +98,6 @@ class OutletsController < ApplicationController
 
   private
     def outlet_params
-      params.require(:outlet).permit(:name, :block, :road, :building, :unit, :postal_code, :halal_type, :dining_type, :menu, :website, :phone, :opening_hours, :cuisine_ids => [])
+      params.require(:outlet).permit(:name, :block, :road, :building, :unit, :postal_code, :halal_type, :dining_type, :menu, :website, :phone, :opening_hours)
     end
 end
