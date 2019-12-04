@@ -120,6 +120,58 @@ body {
 	height: auto;
 }
 
+.outlet-card {
+	background-color: #FAFAFA;
+	margin: 5% 0;
+}
+
+.outlet-card-body{
+	text-align: center;
+}
+
+.outlet-card-info {
+	margin: 2%;
+}
+
+.outlet-card-info p {
+	margin-bottom: 0;
+}
+
+.outlet-card-name {
+	margin: 2%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.outlet-card-address-1 {
+	margin: 0;
+}
+
+.card-text {
+	font-size: 1.2em;
+}
+
+.outlet-card-menu {
+	margin-top: 5%;
+	border-top: 1px solid #DADADA;
+}
+
+.outlet-card-menu-button {
+	margin-top: 2%;
+	width: 500px;
+	height: auto;
+}
+
+.outlet-card-menu p {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.outlet-card-avatar {
+	width: 300px;
+	height: auto;
+}
+
 ////////////////////////////////////////////////////////////
 ////////////////*MOBILE RESPONSIVE*////////////////////////
  @media only screen and (max-width: 700px) {
