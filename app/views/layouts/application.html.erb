@@ -21,19 +21,13 @@
 		    <div class="p-4" style="background-color: #4BC0D4;">
 
 		    	<div class="navbar-buttons">
-				    <% if user_signed_in? == false %>
-				    	<%= button_to 'Log In', new_user_session_url, {:class => "btn btn-outline-light btn-lg m-2"} %>
-				    <% end %>
 
-				    <% if user_signed_in? %>
-				    	<%= button_to 'Log Out', destroy_user_session_url, {method: :delete, :class => "btn btn-outline-light btn-lg m-2"} %>
-				    <% end %>
 
 				    <a class="btn btn-outline-light btn-lg m-2" href="/" role="button">Home</a>
 
 				    <a class="btn btn-outline-light btn-lg m-2" href="/about" role="button">About</a>
 
-				    <a class="btn btn-outline-light btn-lg m-2" href="/contact" role="button">Contact</a>
+				    <!-- <a class="btn btn-outline-light btn-lg m-2" href="/contact" role="button">Contact</a> -->
 				   </div>
 
 		    </div>
