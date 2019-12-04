@@ -34,7 +34,7 @@ body {
 	margin: 2%;
 }
 
-.results-title {
+.results-title, .log-in-title {
 	font-family: 'Raleway', sans-serif;
 	font-size: 2rem;
 	margin: 3%;
@@ -54,7 +54,6 @@ body {
 }
 
 .outlet-name {
-
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -84,10 +83,15 @@ body {
 	margin-top: 2%;
 }
 
-.outlets-show {
+.outlets-show, .log-in-card {
 	background-color: #FAFAFA;
 	margin-top: 2%;
 	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+}
+
+.log-in-card {
+	padding: 2%;
+	text-align: center;
 }
 
 .navbar-buttons {
@@ -99,6 +103,37 @@ body {
 	color: #FFFFFD;
 	margin: 0 45%;
 	font-size: 1.3em;
+}
+
+.btn-outline-back {
+	border: 1px solid #4BC0D4;
+	color: #4BC0D4;
+	font-size: 1.2em;
+	padding: 1% 2%;
+}
+
+.btn-outline-back:hover {
+	background-color: #4BC0D4;
+	color: #FFFFFD;
+}
+
+.btn-edit {
+	background-color: #4BC0D4;
+	color: #FFFFFD;
+	font-size: 1.2em;
+	padding: 1% 2%;
+	margin: 0 2%;
+}
+
+.btn-edit:hover {
+	border: 1px solid #4BC0D4;
+	color: #4BC0D4;
+	background-color: transparent;
+}
+
+.show-buttons {
+	text-align: center;
+	margin-bottom: 2%;
 }
 
 .autoText-container {
@@ -171,6 +206,10 @@ body {
 	width: 300px;
 	height: auto;
 }
+
+// .log-in-title {
+// 	font-family:
+// }
 
 ////////////////////////////////////////////////////////////
 ////////////////*MOBILE RESPONSIVE*////////////////////////

@@ -1,6 +1,5 @@
 <div class="container">
 
-
 	<div class="card outlet-card">
 
 		<% if @outlet.halal_type === "Halal Certified" %>
@@ -68,15 +67,16 @@
 		</div>
 
 
-    <!-- <div class="outlet-card-menu">
-    	<img class="img-fluid" src= <%= @outlet.menu %>  />
-    </div> -->
 
   </div>
 </div>
 
+	<div class="show-buttons">
+		<%= link_to 'Back', outlets_path, {:class => "btn btn-outline-back"} %>
 
-	<% if @outlet.user_id === current_user.id %>
-  	<%= link_to 'Edit', edit_outlet_path(@outlet), {:class => "btn btn-info", :style => "margin: 0 45%;"} %>
-  <% end %>
+		<% if @outlet.user_id === current_user.id %>
+	  	<%= link_to 'Edit', edit_outlet_path(@outlet), {:class => "btn btn-edit"} %>
+	  <% end %>
+	</div>
+
 </div>
