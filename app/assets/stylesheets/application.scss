@@ -98,6 +98,10 @@ body {
 	text-align: center;
 }
 
+.navbar-buttons a:hover {
+	color: #4BC0D4;
+}
+
 .btn-submit {
 	background-color: #4BC0D4;
 	color: #FFFFFD;
@@ -225,12 +229,17 @@ body {
 	text-align: center;
 }
 
+.about-page h2 {
+	font-size: 1.5em;
+}
+
 .about-logo {
 	margin-top: 2% !important;
+	margin-bottom: 1% !important;
 }
 
 .about-body {
-	font-size: 1.2em;
+	font-size: 1em;
 	text-align: left;
 	margin: 10%;
 }

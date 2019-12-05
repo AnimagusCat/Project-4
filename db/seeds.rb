@@ -66,110 +66,110 @@
 # ', :opening_hours => 'Daily: 6am to 1am' )
 
 # # ###### 2ND USER##########
-# Outlet.create( :user_id => 2, :name => 'Stack
-# ', :logo => '', :block => '4
-# ', :road => 'Jalan Klapa
-# ', :building => '
-# ', :unit => '
-# ', :postal_code => '199316
-# ', :dining_type => 'Cafe', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448677/qd6rz3flvagxtl1rhalv.jpg', :website => '', :phone => '
-# ', :opening_hours => 'Daily: 10am – 6pm
-# ' )
-# Outlet.create( :user_id => 2, :name => 'Tipo Pasta Bar
-# ', :logo => '', :block => '785
-# ', :road => 'North Bridge Road
-# ', :building => '
-# ', :unit => '
-# ', :postal_code => '198753
-# ', :dining_type => 'Restaurant', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575449053/lmhg3jnd1pzcnfhceqf4.jpg', :website => 'https://www.tipo.sg/', :phone => '87680465
-# ', :opening_hours => 'Daily: 12pm - 10pm
-# ' )
-# Outlet.create( :user_id => 2, :name => 'The Mad Sailors British Kitchen
-# ', :logo => '', :block => '24
-# ', :road => 'Haji Lane
-# ', :building => '
-# ', :unit => '
-# ', :postal_code => '189217
-# ', :dining_type => 'Restaurant', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575426211/tevvgabfzog20adpesyr.jpg', :website => 'http://www.themadsailors.sg/', :phone => '87680465
-# ', :opening_hours => 'Monday to Thursday: 12pm to 10pm, Friday, 12pm to 11pm Saturday: 10am to 11pm, Sunday: 10am to 10pm
-# ' )
-# Outlet.create( :user_id => 2, :name => 'Afterwit Mexican Taqueria
-# ', :logo => '', :block => '778
-# ', :road => 'North Bridge Road
-# ', :building => '
-# ', :unit => '
-# ', :postal_code => '198753
-# ', :dining_type => 'Restaurant', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575428381/bndcg9i1moepgipw1wn7.jpg', :website => '', :phone => '62911773
-# ', :opening_hours => 'Sunday to Thursday: 12pm to 10pm, Friday and Saturday: 12pm to 11pm
-# ' )
+Outlet.create( :user_id => 2, :name => 'Stack
+', :logo => '', :block => '4
+', :road => 'Jalan Klapa
+', :building => '
+', :unit => '
+', :postal_code => '199316
+', :dining_type => 'Cafe', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448677/qd6rz3flvagxtl1rhalv.jpg', :website => '', :phone => '
+', :opening_hours => 'Daily: 10am – 6pm
+' )
+Outlet.create( :user_id => 2, :name => 'Tipo Pasta Bar
+', :logo => '', :block => '785
+', :road => 'North Bridge Road
+', :building => '
+', :unit => '
+', :postal_code => '198753
+', :dining_type => 'Restaurant', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575449053/lmhg3jnd1pzcnfhceqf4.jpg', :website => 'https://www.tipo.sg/', :phone => '87680465
+', :opening_hours => 'Daily: 12pm - 10pm
+' )
+Outlet.create( :user_id => 2, :name => 'The Mad Sailors British Kitchen
+', :logo => '', :block => '24
+', :road => 'Haji Lane
+', :building => '
+', :unit => '
+', :postal_code => '189217
+', :dining_type => 'Restaurant', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575426211/tevvgabfzog20adpesyr.jpg', :website => 'http://www.themadsailors.sg/', :phone => '87680465
+', :opening_hours => 'Monday to Thursday: 12pm to 10pm, Friday, 12pm to 11pm Saturday: 10am to 11pm, Sunday: 10am to 10pm
+' )
+Outlet.create( :user_id => 2, :name => 'Afterwit Mexican Taqueria
+', :logo => '', :block => '778
+', :road => 'North Bridge Road
+', :building => '
+', :unit => '
+', :postal_code => '198753
+', :dining_type => 'Restaurant', :halal_type => 'Muslim Owned', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575428381/bndcg9i1moepgipw1wn7.jpg', :website => '', :phone => '62911773
+', :opening_hours => 'Sunday to Thursday: 12pm to 10pm, Friday and Saturday: 12pm to 11pm
+' )
 
-# ###### 3RD USER ########
-# Outlet.create( :user_id => 3, :name => 'McDonalds
-# ', :logo => '', :block => '10
-# ', :road => 'Airport Boulevard
-# ', :building => 'Changi Airport Terminal 4
-# ', :unit => '02-204
-# ', :postal_code => '819665
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '63855081
-# ', :opening_hours => 'Daily: 24hrs
-# ' )
-# Outlet.create( :user_id => 3, :name => 'McDonalds
-# ', :logo => '', :block => '3
-# ', :road => 'Anson Road
-# ', :building => 'Springleaf Tower
-# ', :unit => '01-03
-# ', :postal_code => '79909
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '62218903
-# ', :opening_hours => 'Daily: 24hrs
-# ' )
-# Outlet.create( :user_id => 3, :name => 'McDonalds
-# ', :logo => '', :block => '51
-# ', :road => 'Ang Mo Kio Avenue 3
-# ', :building => 'Ang Mo Kio Hub
-# ', :unit => '01-04 51
-# ', :postal_code => '569922
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '64586218
-# ', :opening_hours => 'Sun-Thu: 6am -2am, Fri, Sat & Eve of Public Holiday: 24H
-# ' )
-# Outlet.create( :user_id => 3, :name => 'McDonalds
-# ', :logo => '', :block => '200
-# ', :road => 'Victoria Street
-# ', :building => 'Bugis Junction
-# ', :unit => '01-66
-# ', :postal_code => '188024
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '63393690
-# ', :opening_hours => 'Daily: 7am - 12am
-# ' )
+###### 3RD USER ########
+Outlet.create( :user_id => 3, :name => 'McDonalds
+', :logo => '', :block => '10
+', :road => 'Airport Boulevard
+', :building => 'Changi Airport Terminal 4
+', :unit => '02-204
+', :postal_code => '819665
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '63855081
+', :opening_hours => 'Daily: 24hrs
+' )
+Outlet.create( :user_id => 3, :name => 'McDonalds
+', :logo => '', :block => '3
+', :road => 'Anson Road
+', :building => 'Springleaf Tower
+', :unit => '01-03
+', :postal_code => '79909
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '62218903
+', :opening_hours => 'Daily: 24hrs
+' )
+Outlet.create( :user_id => 3, :name => 'McDonalds
+', :logo => '', :block => '51
+', :road => 'Ang Mo Kio Avenue 3
+', :building => 'Ang Mo Kio Hub
+', :unit => '01-04 51
+', :postal_code => '569922
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '64586218
+', :opening_hours => 'Sun-Thu: 6am -2am, Fri, Sat & Eve of Public Holiday: 24H
+' )
+Outlet.create( :user_id => 3, :name => 'McDonalds
+', :logo => '', :block => '200
+', :road => 'Victoria Street
+', :building => 'Bugis Junction
+', :unit => '01-66
+', :postal_code => '188024
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450556/ln6kscddienb8pjiwkgx.jpg', :website => 'https://www.mcdonalds.com.sg/', :phone => '63393690
+', :opening_hours => 'Daily: 7am - 12am
+' )
 
-# ########## 4TH USER ########
-# Outlet.create( :user_id => 4, :name => 'Swee Heng 1989 Bakery Café
-# ', :logo => '', :block => '10
-# ', :road => 'Eunos Road 8
-# ', :building => 'Singapore Post Centre
-# ', :unit => '01-66
-# ', :postal_code => '188024
-# ', :dining_type => 'Bakery', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450736/bwj87yucxbjxo910hihj.jpg', :website => 'https://sweeheng1989.com.sg/bakery-cafe/', :phone => '66550300
-# ', :opening_hours => 'Daily, 7am - 9pm
-# ' )
-# Outlet.create( :user_id => 4, :name => 'Swee Heng 1989 Bakery Café
-# ', :logo => '', :block => '63
-# ', :road => 'Jurong West Central 3
-# ', :building => '
-# ', :unit => '03-31
-# ', :postal_code => '648331
-# ', :dining_type => 'Bakery', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450736/bwj87yucxbjxo910hihj.jpg', :website => 'https://sweeheng1989.com.sg/bakery-cafe/', :phone => '66120300
-# ', :opening_hours => 'Daily, 10am - 10pm
-# ' )
-# ########## 5TH USER #############
-# Outlet.create( :user_id => 5, :name => 'Swensens Restaurant
-# ', :logo => '', :block => '53
-# ', :road => 'Ang Mo Kio Avenue 3
-# ', :building => 'Ang Mo Kio Hub
-# ', :unit => '
-# ', :postal_code => '569933
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575362803/q9hiixfnfbdcsjardbay.jpg', :website => 'https://www.swensens.com.sg/', :phone => '64814316
-# ', :opening_hours => 'Weekdays: 10.30am-10.30pm, Weekends & PH: 8am-10.30pm
-# ' )
+########## 4TH USER ########
+Outlet.create( :user_id => 4, :name => 'Swee Heng 1989 Bakery Café
+', :logo => '', :block => '10
+', :road => 'Eunos Road 8
+', :building => 'Singapore Post Centre
+', :unit => '01-66
+', :postal_code => '188024
+', :dining_type => 'Bakery', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450736/bwj87yucxbjxo910hihj.jpg', :website => 'https://sweeheng1989.com.sg/bakery-cafe/', :phone => '66550300
+', :opening_hours => 'Daily, 7am - 9pm
+' )
+Outlet.create( :user_id => 4, :name => 'Swee Heng 1989 Bakery Café
+', :logo => '', :block => '63
+', :road => 'Jurong West Central 3
+', :building => '
+', :unit => '03-31
+', :postal_code => '648331
+', :dining_type => 'Bakery', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575450736/bwj87yucxbjxo910hihj.jpg', :website => 'https://sweeheng1989.com.sg/bakery-cafe/', :phone => '66120300
+', :opening_hours => 'Daily, 10am - 10pm
+' )
+########## 5TH USER #############
+Outlet.create( :user_id => 5, :name => 'Swensens Restaurant
+', :logo => '', :block => '53
+', :road => 'Ang Mo Kio Avenue 3
+', :building => 'Ang Mo Kio Hub
+', :unit => '
+', :postal_code => '569933
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575362803/q9hiixfnfbdcsjardbay.jpg', :website => 'https://www.swensens.com.sg/', :phone => '64814316
+', :opening_hours => 'Weekdays: 10.30am-10.30pm, Weekends & PH: 8am-10.30pm
+' )
 
 ######### CUISINE OUTLETS ##########
 

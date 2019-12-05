@@ -36,11 +36,6 @@ class OutletsController < ApplicationController
     @outlet.user = current_user
     # @cuisines = Cuisine.all
 
-    p '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
-    puts current_user
-    p params
-    p '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
-
     ##CLOUDINARY PORTION####
     # uploaded_logo = outlet_params[:logo].path
     # cloudinary_file_logo = Cloudinary::Uploader.upload(uploaded_logo)
@@ -94,6 +89,7 @@ class OutletsController < ApplicationController
 
   def result
      @outlets = Outlet.all
+     p @outlets
   end
 
   private
