@@ -2,7 +2,7 @@
 The one-stop list of all halal places in Singapore based on a list provided by MUIS and food review blogs.
 Just type in your location to search for halal places in that area.
 
-https://jommakan.herokuapp.com/
+<a href="https://jommakan.herokuapp.com/" target="_blank">Website</a>
 
 # Technologies Used
 ```
