@@ -173,11 +173,11 @@ Outlet.create( :user_id => 5, :name => 'Swensens Restaurant
 
 ######### CUISINE OUTLETS ##########
 
-CuisineOutlet.create( :cuisine_id => 16, :outlet_id => 1)
-Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 1)
-Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 2)
-Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 3)
-Cuisines_outlets.create( :cuisine_id => 13, :outlet_id => 4)
-Cuisines_outlets.create( :cuisine_id => 16, :outlet_id => 4)
-Cuisines_outlets.create( :cuisine_id => 7, :outlet_id => 5)
-Cuisines_outlets.create( :cuisine_id => 17, :outlet_id => 5)
+# CuisineOutlet.create( :cuisine_id => 16, :outlet_id => 1)
+# Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 1)
+# Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 2)
+# Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 3)
+# Cuisines_outlets.create( :cuisine_id => 13, :outlet_id => 4)
+# Cuisines_outlets.create( :cuisine_id => 16, :outlet_id => 4)
+# Cuisines_outlets.create( :cuisine_id => 7, :outlet_id => 5)
+# Cuisines_outlets.create( :cuisine_id => 17, :outlet_id => 5)

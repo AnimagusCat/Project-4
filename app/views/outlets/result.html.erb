@@ -1,10 +1,43 @@
 <div class="container">
 	<h1 class="results-title">Listing all outlets in "<%= params[:keyword] %>"</h1>
 
-
-	These are the outlets in RESULT
 	<% @outlets.each do |outlet| %>
-		<p><%=outlet.name%></p>
-	<% end %>
+		<div class="card results-card">
+
+			<% if outlet.halal_type === "Halal Certified" %>
+			<div class="card-header results-card-header-c">
+				<span class="halal-type"><%= outlet.halal_type %></span>
+				<span class="dining-type" style="text-transform: capitalize"><%= outlet.dining_type %></span>
+			</div>
+	  <% end %>
+
+	  <% if outlet.halal_type === "Muslim Owned" %>
+		<div class="card-header results-card-header-m">
+				<span class="halal-type"><%= outlet.halal_type %></span>
+				<span class="dining-type" style="text-transform: capitalize"><%= outlet.dining_type %></span>
+			</div>
+	  <% end %>
+
+	  <div class="card-body">
+		<div class="row">
+			<div class="col-5 outlet-logo">
+				<img src= <%= outlet.user.avatar %> />
+			</div>
+			<div class="col-7 outlet-info">
+				<h5 class="card-title outlet-name"><a href="/outlets/<%= outlet.id %>"><%= outlet.name %></a></h5>
+				<p class="card-text address"><%= outlet.block %> <%= outlet.road %> <%= outlet.unit %> <%= outlet.building %></p>
+				<p class="card-text address">Singapore <%= outlet.postal_code %></p>
+			  </div>
+			</div>
+	  </div>
+
+	</div>
+
+<% end %>
+
+
+
+
+
 
 </div>
