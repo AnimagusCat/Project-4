@@ -8,62 +8,62 @@
 
 ##### CUISINE TYPES ######
 
-# Cuisine.create( :name => 'malay')
-# Cuisine.create( :name => 'indonesian')
-# Cuisine.create( :name => 'korean')
-# Cuisine.create( :name => 'japanese')
-# Cuisine.create( :name => 'chinese')
-# Cuisine.create( :name => 'indian')
-# Cuisine.create( :name => 'mexican')
-# Cuisine.create( :name => 'middle eastern')
-# Cuisine.create( :name => 'mediterranean')
-# Cuisine.create( :name => 'fast food')
-# Cuisine.create( :name => 'italian')
-# Cuisine.create( :name => 'swedish')
-# Cuisine.create( :name => 'western')
-# Cuisine.create( :name => 'thai')
-# Cuisine.create( :name => 'vietnamese')
-# Cuisine.create( :name => 'desserts')
-# Cuisine.create( :name => 'snacks')
+Cuisine.create( :name => 'malay')
+Cuisine.create( :name => 'indonesian')
+Cuisine.create( :name => 'korean')
+Cuisine.create( :name => 'japanese')
+Cuisine.create( :name => 'chinese')
+Cuisine.create( :name => 'indian')
+Cuisine.create( :name => 'mexican')
+Cuisine.create( :name => 'middle eastern')
+Cuisine.create( :name => 'mediterranean')
+Cuisine.create( :name => 'fast food')
+Cuisine.create( :name => 'italian')
+Cuisine.create( :name => 'swedish')
+Cuisine.create( :name => 'western')
+Cuisine.create( :name => 'thai')
+Cuisine.create( :name => 'vietnamese')
+Cuisine.create( :name => 'desserts')
+Cuisine.create( :name => 'snacks')
 
 
-###### USERS ##########
+##### USERS ##########
 
-# User.create( :email => 'user@email.com', :password => '123123', :name => '4 Fingers Crispy Chicken', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575381890/roqmagv3f8siwkjzydoo.jpg' )
-# User.create( :email => 'user2@email.com', :password => '123123', :name => 'The Black Hole Group', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575424760/qpiwwxtou9opnkcsjgui.jpg' )
-# User.create( :email => 'user3@email.com', :password => '123123', :name => 'McDonalds', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575389519/cnjndipwervluyqolrc6.png' )
-# User.create( :email => 'user4@email.com', :password => '123123', :name => 'Swee Heng 1989 Bakery Café', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575428742/y1skchow7nzpu35ptg94.jpg' )
-# User.create( :email => 'user5@email.com', :password => '123123', :name => 'Swensens Restaurant', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575428824/ckryhbpefkza6djni9hr.jpg' )
-# User.create( :email => 'user6@email.com', :password => '123123', :name => 'Asyrafs Halal Corner', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575429849/rviskix8wd60ryb146or.jpg' )
-# User.create( :email => 'user7@email.com', :password => '123123', :name => 'Akbar 24 Hours Restaurant', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575430395/u2xy4khthdl3drcubbtm.jpg' )
+User.create( :email => 'user@email.com', :password => '123123', :name => '4 Fingers Crispy Chicken', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575381890/roqmagv3f8siwkjzydoo.jpg' )
+User.create( :email => 'user2@email.com', :password => '123123', :name => 'The Black Hole Group', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575424760/qpiwwxtou9opnkcsjgui.jpg' )
+User.create( :email => 'user3@email.com', :password => '123123', :name => 'McDonalds', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575389519/cnjndipwervluyqolrc6.png' )
+User.create( :email => 'user4@email.com', :password => '123123', :name => 'Swee Heng 1989 Bakery Café', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575428742/y1skchow7nzpu35ptg94.jpg' )
+User.create( :email => 'user5@email.com', :password => '123123', :name => 'Swensens Restaurant', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575428824/ckryhbpefkza6djni9hr.jpg' )
+User.create( :email => 'user6@email.com', :password => '123123', :name => 'Asyrafs Halal Corner', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575429849/rviskix8wd60ryb146or.jpg' )
+User.create( :email => 'user7@email.com', :password => '123123', :name => 'Akbar 24 Hours Restaurant', :avatar => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575430395/u2xy4khthdl3drcubbtm.jpg' )
 
 
-####### OUTLETS ##############
+###### OUTLETS ##############
 
-# Outlet.create( :user_id => 1, :name => '4 Fingers Crispy Chicken
-# ', :logo => '', :block => '930
-# ', :road => 'Yishun Avenue 2
-# ', :building => 'Northpoint Shopping Centre
-# ', :unit => '01-15
-# ', :postal_code => '769098
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448181/fxxpvswioy9jzmlfsh7c.jpg', :website => 'https://www.4fingers.com/Home-4FINGERS', :phone => '63387668
-# ', :opening_hours => 'Daily: 11.00am to 10.00pm' )
-# Outlet.create( :user_id => 1, :name => '4 Fingers Crispy Chicken
-# ', :logo => '', :block => '50
-# ', :road => 'Jurong Gateway Road
-# ', :building => 'JEM Shopping Mall
-# ', :unit => '01-15A
-# ', :postal_code => '608549
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448181/fxxpvswioy9jzmlfsh7c.jpg', :website => 'https://www.4fingers.com/Home-4FINGERS', :phone => '63387668
-# ', :opening_hours => 'Daily: 11.00am to 10.00pm' )
-# Outlet.create( :user_id => 1, :name => '4 Fingers Crispy Chicken
-# ', :logo => '', :block => '80
-# ', :road => 'Airport Boulevard
-# ', :building => 'Changi Airport Terminal 1
-# ', :unit => '03-47
-# ', :postal_code => '819642
-# ', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448181/fxxpvswioy9jzmlfsh7c.jpg', :website => 'https://www.4fingers.com/Home-4FINGERS', :phone => '63387668
-# ', :opening_hours => 'Daily: 6am to 1am' )
+Outlet.create( :user_id => 1, :name => '4 Fingers Crispy Chicken
+', :logo => '', :block => '930
+', :road => 'Yishun Avenue 2
+', :building => 'Northpoint Shopping Centre
+', :unit => '01-15
+', :postal_code => '769098
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448181/fxxpvswioy9jzmlfsh7c.jpg', :website => 'https://www.4fingers.com/Home-4FINGERS', :phone => '63387668
+', :opening_hours => 'Daily: 11.00am to 10.00pm' )
+Outlet.create( :user_id => 1, :name => '4 Fingers Crispy Chicken
+', :logo => '', :block => '50
+', :road => 'Jurong Gateway Road
+', :building => 'JEM Shopping Mall
+', :unit => '01-15A
+', :postal_code => '608549
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448181/fxxpvswioy9jzmlfsh7c.jpg', :website => 'https://www.4fingers.com/Home-4FINGERS', :phone => '63387668
+', :opening_hours => 'Daily: 11.00am to 10.00pm' )
+Outlet.create( :user_id => 1, :name => '4 Fingers Crispy Chicken
+', :logo => '', :block => '80
+', :road => 'Airport Boulevard
+', :building => 'Changi Airport Terminal 1
+', :unit => '03-47
+', :postal_code => '819642
+', :dining_type => 'Restaurant', :halal_type => 'Halal Certified', :menu => 'https://res.cloudinary.com/dqcbnnvt4/image/upload/v1575448181/fxxpvswioy9jzmlfsh7c.jpg', :website => 'https://www.4fingers.com/Home-4FINGERS', :phone => '63387668
+', :opening_hours => 'Daily: 6am to 1am' )
 
 # # ###### 2ND USER##########
 Outlet.create( :user_id => 2, :name => 'Stack
@@ -173,11 +173,11 @@ Outlet.create( :user_id => 5, :name => 'Swensens Restaurant
 
 ######### CUISINE OUTLETS ##########
 
-# CuisineOutlet.create( :cuisine_id => 16, :outlet_id => 1)
-# Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 1)
-# Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 2)
-# Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 3)
-# Cuisines_outlets.create( :cuisine_id => 13, :outlet_id => 4)
-# Cuisines_outlets.create( :cuisine_id => 16, :outlet_id => 4)
-# Cuisines_outlets.create( :cuisine_id => 7, :outlet_id => 5)
-# Cuisines_outlets.create( :cuisine_id => 17, :outlet_id => 5)
+CuisineOutlet.create( :cuisine_id => 16, :outlet_id => 1)
+Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 1)
+Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 2)
+Cuisines_outlets.create( :cuisine_id => 10, :outlet_id => 3)
+Cuisines_outlets.create( :cuisine_id => 13, :outlet_id => 4)
+Cuisines_outlets.create( :cuisine_id => 16, :outlet_id => 4)
+Cuisines_outlets.create( :cuisine_id => 7, :outlet_id => 5)
+Cuisines_outlets.create( :cuisine_id => 17, :outlet_id => 5)
