@@ -85,13 +85,18 @@ class OutletsController < ApplicationController
     # @outlets = Outlet.where(road: params[:keyword])
     @outlets = Outlet.where("road = ?", params[:keyword])
 
+    p 'this is the outlets in search'
     p @outlets
+
     render "result"
   end
 
   def result
+     p '@@@@@@@@@@@@@@@@@@@@@@@@@@@'
      @outlets = Outlet.all
+     p 'this is the outlets in result'
      p @outlets
+     p '@@@@@@@@@@@@@@@@@@@@@@@@@@@'
   end
 
   private
