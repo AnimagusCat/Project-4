@@ -27,7 +27,6 @@ body {
 	margin-top: 20%;
 	margin-bottom: 2%;
 	color: #4BC0D4;
-	/*text-align: center;*/
 }
 
 .results-card {
@@ -41,18 +40,19 @@ body {
 	text-align: center;
 }
 
-.results-card-header-c {
-	background-color: #FAD584;
-	padding: 1%;
-	// display: flex;
-	// justify-content: space-between;
+.card-header {
+	display: flex;
+	justify-content: space-between;
 }
 
-.results-card-header-m {
+.results-card-header-c, .show-card-header-c {
+	background-color: #FAD584;
+	padding: 1%;
+}
+
+.results-card-header-m, .show-card-header-m {
 	background-color: #FCC1B3;
 	padding: 1%;
-	// display: flex;
-	// justify-content: space-between;
 }
 
 .outlet-name {
@@ -83,6 +83,7 @@ body {
 .outlet-info {
 	padding: 1%;
 }
+
 .new-outlet-title, .edit-outlet-title, .edit-user-profile {
 	text-align: center;
 	margin-top: 2%;
@@ -199,13 +200,11 @@ body {
 	font-weight: bold;
 }
 
-.outlet-card-address-1 {
-	margin: 0;
-}
-
 .outlet-card-menu {
 	margin-top: 5%;
 	border-top: 1px solid #DADADA;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .outlet-card-menu-button {
@@ -214,14 +213,8 @@ body {
 	height: auto;
 }
 
-.outlet-card-menu p {
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
 .outlet-card-avatar {
-	width: 300px;
-	height: auto;
+	width: 200px;
 }
 
 .about-page {
@@ -254,6 +247,7 @@ body {
  	.profile-avatar img {
  		width: 100%
  	}
+
  	.logo-home {
  		font-size: 40px;
  		margin: 0 0 5% 0;
@@ -264,7 +258,8 @@ body {
  	}
 
  	.card-header {
- 		font-size: 0.8em;
+ 		font-size: 0.6em;
+ 		padding: 2%;
  	}
 
  	.card-title {
@@ -278,12 +273,29 @@ body {
  		width: 90%;
  	}
 
+ 	.show-card-text {
+ 		font-size: 0.6em;
+ 		margin-bottom: 0.5em;
+ 	}
+
  	.outlet-logo img {
  		width: 100%;
  	}
 
- 	.halal-type, .dining-type {
+ 	.outlet-card-avatar {
+ 		width: 50%;
+ 	}
+
+ 	.outlet-card-menu {
+ 		font-size: 0.8em;
+ 	}
+
+ 	.results-card-header-c p, .results-card-header-m p {
  		font-size: 0.5em;
+ 	}
+
+ 	.btn-outline-back {
+ 		font-size: 0.8em;
  	}
 
 
