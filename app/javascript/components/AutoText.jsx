@@ -74,7 +74,7 @@ class AutoText extends React.Component{
             <div className="autoText-container">
                 <div className="row">
                     <div className="col-md-6 search-area">
-                        <h1 className="logo-home">JOMMAKAN</h1>
+                        <h1 className="logo-home">Find Halal Places Near You</h1>
                         <div className="AutoText">
                             <input className="form-control" value={text} onChange={this.onTextChange} type="text" placeholder="Enter a road name..." />
                             {this.renderSuggestions ()}
@@ -87,7 +87,6 @@ class AutoText extends React.Component{
 
                     <div className="col-md-6 homepage-pic">
                         <img src={ require('../../assets/images/home-pic.png') } />
-                        <h1>Find halal eateries near you</h1>
                     </div>
 
 
