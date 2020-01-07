@@ -43,14 +43,16 @@ body {
 
 .results-card-header-c {
 	background-color: #FAD584;
-	display: flex;
-	justify-content: space-between;
+	padding: 1%;
+	// display: flex;
+	// justify-content: space-between;
 }
 
 .results-card-header-m {
 	background-color: #FCC1B3;
-	display: flex;
-	justify-content: space-between;
+	padding: 1%;
+	// display: flex;
+	// justify-content: space-between;
 }
 
 .outlet-name {
@@ -78,6 +80,9 @@ body {
 	height: auto;
 }
 
+.outlet-info {
+	padding: 1%;
+}
 .new-outlet-title, .edit-outlet-title, .edit-user-profile {
 	text-align: center;
 	margin-top: 2%;
@@ -125,7 +130,6 @@ body {
 .btn-outline-back {
 	border: 1px solid #4BC0D4;
 	color: #4BC0D4;
-	font-size: 1.2em;
 	padding: 1% 2%;
 }
 
@@ -199,10 +203,6 @@ body {
 	margin: 0;
 }
 
-// .card-text {
-// 	font-size: 1.2em;
-// }
-
 .outlet-card-menu {
 	margin-top: 5%;
 	border-top: 1px solid #DADADA;
@@ -244,6 +244,9 @@ body {
 	margin: 10%;
 }
 
+
+
+
 ////////////////////////////////////////////////////////////
 ////////////////*MOBILE RESPONSIVE*////////////////////////
  @media only screen and (max-width: 700px) {
@@ -265,21 +268,23 @@ body {
  	}
 
  	.card-title {
- 		font-size: 1em;
+ 		font-size: 0.7em;
+ 		width: 90%;
  	}
 
  	.card-text {
- 		font-size: 0.8em;
- 	}
-
- 	.outlet-info p {
+ 		font-size: 0.6em;
  		margin-bottom: 0.5em;
+ 		width: 90%;
  	}
 
  	.outlet-logo img {
  		width: 100%;
  	}
 
+ 	.halal-type, .dining-type {
+ 		font-size: 0.5em;
+ 	}
 
 
  }
