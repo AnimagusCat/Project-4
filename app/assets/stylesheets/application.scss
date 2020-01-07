@@ -36,7 +36,7 @@ body {
 
 .results-title, .log-in-title {
 	font-family: 'Raleway', sans-serif;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 3%;
 	text-align: center;
 }
@@ -199,9 +199,9 @@ body {
 	margin: 0;
 }
 
-.card-text {
-	font-size: 1.2em;
-}
+// .card-text {
+// 	font-size: 1.2em;
+// }
 
 .outlet-card-menu {
 	margin-top: 5%;
@@ -254,7 +254,30 @@ body {
  	.logo-home {
  		font-size: 40px;
  		margin: 0 0 5% 0;
+ 	}
 
+ 	.results-title {
+ 		font-size: 1em;
+ 	}
+
+ 	.card-header {
+ 		font-size: 0.8em;
+ 	}
+
+ 	.card-title {
+ 		font-size: 1em;
+ 	}
+
+ 	.card-text {
+ 		font-size: 0.8em;
+ 	}
+
+ 	.outlet-info p {
+ 		margin-bottom: 0.5em;
+ 	}
+
+ 	.outlet-logo img {
+ 		width: 100%;
  	}
 
 
