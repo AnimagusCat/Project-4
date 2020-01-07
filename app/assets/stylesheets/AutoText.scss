@@ -90,3 +90,39 @@
 .ShowAll:hover {
 	color: #4BC0D4;
 }
+
+@media only screen and (max-width: 700px) {
+
+ 	.Searchbtn {
+ 		font-size: 14px;
+ 		margin: 0;
+ 	}
+
+ 	.ShowAll {
+ 		font-size: 14px;
+ 		margin-top: 12%;
+ 		margin-left: 3%;
+ 	}
+
+ 	.AutoText input, .AutoText {
+ 		font-size: 14px;
+ 	}
+
+ 	.AutoText ul {
+ 		position: absolute;
+ 		z-index: 2;
+ 		width: 58%;
+ 		box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+ 	}
+
+ 	.homepage-pic h1 {
+ 		font-size: 1em;
+ 	}
+
+ 	.homepage-pic img {
+	margin-left: 15%;
+}
+
+
+
+ }
